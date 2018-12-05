@@ -6,20 +6,15 @@
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.bit-booster</groupId>
 <version>7.8.9</version>
-<artifactId>madness</artifactId>
-<packaging>pom</packaging>
+<artifactId>madness-sub5</artifactId>
+<packaging>war</packaging>
 
 <properties>
     <failOnMissingWebXml>false</failOnMissingWebXml>   
 </properties>
 
-<modules>
-  <module>sub1</module>
-  <module>sub2</module>
-  <module>sub3</module>
-  <module>sub4</module>
-  <module>sub5</module>
-  <module>ear</module>
-</modules>
+<dependencies>
+<dependency><groupId>com.fasterxml.jackson.jaxrs</groupId><artifactId>jackson-jaxrs-base</artifactId><version>2.5.4</version></dependency>
+</dependencies>
 
 </project>

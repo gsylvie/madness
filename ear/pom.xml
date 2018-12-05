@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.bit-booster</groupId>
+<version>7.8.9</version>
+<artifactId>madness-ear</artifactId>
+<packaging>ear</packaging>
+
+<properties>
+    <failOnMissingWebXml>false</failOnMissingWebXml>   
+</properties>
+
+<dependencies>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub1</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub2</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub3</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub4</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub5</artifactId><version>7.8.9</version><type>war</type></dependency>
+</dependencies>
+
+
+
+</project>
