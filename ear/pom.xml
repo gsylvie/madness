@@ -5,7 +5,7 @@
 
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.bit-booster</groupId>
-<version>7.9.6</version>
+<version>2019.02.01</version>
 <artifactId>madness-ear</artifactId>
 <packaging>ear</packaging>
 
@@ -18,8 +18,8 @@
 </properties>
 
 <dependencies>
-<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub1</artifactId><version>7.8.9</version><type>war</type></dependency>
-<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub2</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub1</artifactId><version>2019.02.01</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub2</artifactId><version>2019.02.01</version><type>war</type></dependency>
 
 <dependency>
     <groupId>org.apache.sshd</groupId>
@@ -28,9 +28,9 @@
 </dependency>
 
 
-<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub3</artifactId><version>7.8.9</version><type>war</type></dependency>
-<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub4</artifactId><version>7.8.9</version><type>war</type></dependency>
-<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub5</artifactId><version>7.8.9</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub3</artifactId><version>2019.02.01</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub4</artifactId><version>2019.02.01</version><type>war</type></dependency>
+<dependency><groupId>com.bit-booster</groupId><artifactId>madness-sub5</artifactId><version>2019.02.01</version><type>war</type></dependency>
 
 <dependency>
     <groupId>org.beanshell</groupId>
