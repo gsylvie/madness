@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mergebase</groupId>
+    <artifactId>mergebase</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- The core Java modules. Additional modules are specified in the profiles section below -->
+
+    <modules>
+        <module>util</module>
+        <module>sigs</module>
+        <module>inoculator_src</module>
+        <module>inoculator</module>
+        <module>vuln</module>
+        <module>scan</module>
+        <module>clt</module>
+        <module>war</module>
+        <module>file-scan-lib</module>
+    </modules>
+
+    <properties>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <jersey-client.version>2.29.1</jersey-client.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <javassist.version>3.26.0-GA</javassist.version>
+        <powermock.version>2.0.0</powermock.version>
+        <jackson.version>2.12.1</jackson.version>
+        <junit.version>4.13.1</junit.version>
+        <resteasy.version>4.6.0.Final</resteasy.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>jdk.tools</groupId>
+            <artifactId>jdk.tools</artifactId>
+            <version>VERSION</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.5.0.1254</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <property>
+                    <name>dev</name>
+                    <value>!true</value>
+                </property>
+            </activation>
+            <modules>
+                <!-- At some point we should move the testing module to 'testing' profile
+                     when we have a Jenkins project to run the micro-benchmarks -->
+                <module>testing</module>
+                <module>contains-java</module>
+                <module>mbux</module>
+                <module>sample-app</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <property>
+                    <name>dev</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <!-- can put some dev stuff here in the future -->
+        </profile>
+    </profiles>
+
+</project>
