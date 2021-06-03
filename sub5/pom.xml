@@ -20,9 +20,7 @@
 <dependency>
     <groupId>com.jcraft</groupId>
     <artifactId>jsch</artifactId>
-    <version>0.1.55</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/src/main/resources/jsch-0.1.55.bad.jar</systemPath>
+    <version>0.1.51</version>
 </dependency>
 
 </dependencies>
