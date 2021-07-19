@@ -1,0 +1,12 @@
+<settings>
+
+    <mirrors>
+      <mirror>
+        <id>jboss-public-repository-group-https-mirror</id>
+	<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <mirrorOf>jboss-public-repository-group</mirrorOf>
+      </mirror>
+    </mirrors>
+
+
+</settings>
