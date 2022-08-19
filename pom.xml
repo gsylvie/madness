@@ -1,30 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bit-booster</groupId>
+    <version>2019.02.01</version>
+    <artifactId>madness</artifactId>
+    <packaging>pom</packaging>
 
-<modelVersion>4.0.0</modelVersion>
-<groupId>com.bit-booster</groupId>
-<version>2019.02.01</version>
-<artifactId>madness</artifactId>
-<packaging>pom</packaging>
+    <properties>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
 
-<properties>
-    <failOnMissingWebXml>false</failOnMissingWebXml>   
-</properties>
+    <modules>
+        <module>sub1</module>
+        <module>sub2</module>
+        <module>sub3</module>
+        <module>sub4</module>
+        <module>sub5</module>
+        <module>sub6</module>
+        <module>sub7</module>
+        <module>sub8</module>
+        <module>sub9</module>
+        <module>ubers</module>
+        <module>ear</module>
+    </modules>
 
-<modules>
-  <module>sub1</module>
-  <module>sub2</module>
-  <module>sub3</module>
-  <module>sub4</module>
-  <module>sub5</module>
-  <module>sub6</module>
-  <module>sub7</module>
-  <module>sub8</module>
-  <module>sub9</module>
-  <module>ubers</module>
-  <module>ear</module>
-</modules>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
+                <version>2.7.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>makeAggregateBom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <projectType>library</projectType>
+                    <schemaVersion>1.4</schemaVersion>
+                    <includeBomSerialNumber>true</includeBomSerialNumber>
+                    <includeCompileScope>true</includeCompileScope>
+                    <includeProvidedScope>false</includeProvidedScope>
+                    <includeRuntimeScope>true</includeRuntimeScope>
+                    <includeSystemScope>false</includeSystemScope>
+                    <includeTestScope>false</includeTestScope>
+                    <includeLicenseText>true</includeLicenseText>
+                    <outputReactorProjects>true</outputReactorProjects>
+                    <outputFormat>all</outputFormat>
+                    <outputName>bom</outputName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
