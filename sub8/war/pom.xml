@@ -71,7 +71,7 @@
             <!-- liquibase:update relies on the postgresql jar being in the test class path  -->
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.16</version>
+            <version>42.4.1</version>
             <scope>test</scope>
         </dependency>
 
