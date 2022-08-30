@@ -65,7 +65,7 @@
                  Only used for HTTP processing in JiraService. Should remove. -->
             <groupId>com.google.oauth-client</groupId>
             <artifactId>google-oauth-client</artifactId>
-            <version>1.31.4</version>
+            <version>1.33.3</version>
         </dependency>
         <dependency>
             <!-- liquibase:update relies on the postgresql jar being in the test class path  -->
