@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.apache.sshd</groupId>
             <artifactId>sshd-sftp</artifactId>
-            <version>0.10.0</version>
+            <version>2.7.0</version>
         </dependency>
         <dependency>
             <groupId>com.bit-booster</groupId>
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpasyncclient</artifactId>
-            <version>4.0.2</version>
+            <version>4.1.5</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
@@ -122,7 +122,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
-            <version>4.0</version>
+            <version>4.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -132,7 +132,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>3.3.2.GA</version>
+            <version>3.4.0.GA</version>
             <exclusions>
                 <exclusion>
                     <groupId>asm</groupId>
@@ -161,7 +161,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.3.0.SP1</version>
+            <version>5.4.24.Final</version>
         </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -176,12 +176,12 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.1.2</version>
+            <version>1.2.7</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
-            <version>1.1.2</version>
+            <version>1.2.7</version>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -196,7 +196,7 @@
         <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant-apache-regexp</artifactId>
-            <version>1.8.2</version>
+            <version>1.10.9</version>
         </dependency>
         <dependency>
             <groupId>org.w3c.css</groupId>
@@ -216,7 +216,7 @@
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
-            <version>2.11.0</version>
+            <version>2.12.2</version>
         </dependency>
         <dependency>
             <groupId>xml-apis</groupId>
@@ -231,47 +231,47 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.19.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.22.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>4.1.7.RELEASE</version>
+            <version>5.2.20.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.7</version>
+            <version>2.8.9</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -281,12 +281,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.6.2</version>
+            <version>2.13.4</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.6.2</version>
+            <version>2.8.6</version>
         </dependency>
         <dependency>
             <groupId>javax.ws.rs</groupId>
@@ -306,7 +306,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>5.2.2.Final</version>
+            <version>6.0.23.Final</version>
         </dependency>
         <dependency>
             <groupId>org.owasp.encoder</groupId>
@@ -316,22 +316,22 @@
         <dependency>
             <groupId>org.owasp.esapi</groupId>
             <artifactId>esapi</artifactId>
-            <version>2.1.0</version>
+            <version>2.3.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>30.0-android</version>
         </dependency>
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
-            <version>2.3.20</version>
+            <version>6.0.0</version>
         </dependency>
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
-            <version>3.1</version>
+            <version>3.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.jasig.mojo.jspc</groupId>
@@ -346,12 +346,12 @@
         <dependency>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
-            <version>2.6</version>
+            <version>3.0</version>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20140107</version>
+            <version>20180130</version>
         </dependency>
         <dependency>
             <groupId>com.internetitem</groupId>
